@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ranazaheerahmad.vercel.app"),
-  title: "Rana Zaheer Ahmad Shakir | Electronics & IT Computer Network Engineer",
+  title: "Engr. Rana Zaheer Ahmad Shakir | Electronics & IT Network Engineer",
   description:
-    "Official portfolio of Rana Zaheer Ahmad Shakir. 15+ Years Experienced Electronics & IT Systems Supervisor at Saudi Binladin Group (Al Safa & Mina Royal Palaces Makkah). Saudi Council of Engineers Verified & NEBOSH Level 7 H&S Certified.",
+    "Official portfolio of Engr. Rana Zaheer Ahmad Shakir. 15+ Years Experienced Electronics & IT Systems Supervisor at Saudi Binladin Group (Al Safa & Mina Royal Palaces Makkah). Saudi Council of Engineers (SCE) Verified & NEBOSH Level 7 H&S Certified.",
   keywords: [
     "Rana Zaheer Ahmad Shakir",
     "Electronics Engineer",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Rana Zaheer Ahmad Shakir" }],
   openGraph: {
-    title: "Rana Zaheer Ahmad Shakir | Electronics & IT Computer Network Engineer",
+    title: "Engr. Rana Zaheer Ahmad Shakir | Electronics & IT Network Engineer",
     description:
       "15+ Years Experienced Electronics & IT Systems Supervisor at Saudi Binladin Group (Al Safa & Mina Royal Palaces Makkah). Verified Saudi Council of Engineers & NEBOSH Certified.",
     type: "website",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: "/images/avatar_fb.jpg",
         width: 720,
         height: 720,
-        alt: "Rana Zaheer Ahmad Shakir"
+        alt: "Engr. Rana Zaheer Ahmad Shakir"
       }
     ]
   }
@@ -58,8 +58,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}>
-      <body className="bg-[#090d16] text-slate-300 antialiased selection:bg-teal-500 selection:text-slate-950 overflow-x-hidden min-h-screen ambient-glow relative">
-        {/* Dynamic AI Background Canvas */}
+      <body className="bg-[#040816] text-slate-200 antialiased selection:bg-blue-600 selection:text-white overflow-x-hidden min-h-screen ambient-glow relative">
+        {/* Dynamic Executive AI Background Canvas */}
         <AiCanvasBackground />
 
         {/* Top Scroll Indicator */}

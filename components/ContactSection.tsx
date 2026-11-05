@@ -43,15 +43,15 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 mb-4">
-            <MessageSquare className="w-3.5 h-3.5" />
-            <span>Direct Communication Channels</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium bg-blue-950/70 text-blue-300 border border-blue-500/30 mb-4">
+            <MessageSquare className="w-3.5 h-3.5 text-blue-400" />
+            <span>Official Direct Communication Channels</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Connect with Rana Zaheer Ahmad
+            Connect with Engr. Rana Zaheer Ahmad
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Open for Senior Technical Supervisor, Engineering Management, and Specialized Low-Voltage / IT Infrastructure contracts in Saudi Arabia and internationally.
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Open for Senior Technical Supervisor, Engineering Operations Management, and Specialized Low-Voltage / IT Infrastructure contracts in Saudi Arabia and internationally.
           </p>
         </div>
 
@@ -62,13 +62,13 @@ export default function ContactSection() {
             
             {/* WhatsApp Priority Card */}
             <a
-              href="https://wa.me/966580828612?text=Hello%20Rana%20Zaheer%20Ahmad,%20I%20reviewed%20your%20Engineering%20Portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you."
+              href="https://wa.me/966580828612?text=Hello%20Engr.%20Rana%20Zaheer%20Ahmad,%20I%20reviewed%20your%20Official%20Engineering%20Portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you."
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-panel rounded-3xl p-6 border-emerald-500/40 bg-gradient-to-br from-emerald-950/30 to-slate-900/90 block group hover:border-emerald-400 transition-all duration-300 shadow-lg hover:shadow-[0_0_30px_rgba(16,185,129,0.25)]"
+              className="glass-panel rounded-3xl p-6 border-emerald-500/40 bg-gradient-to-br from-emerald-950/30 to-[#070e24]/90 block group hover:border-emerald-400 transition-all duration-300 shadow-lg hover:shadow-[0_0_30px_rgba(16,185,129,0.25)]"
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition-transform">
+                <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-300 group-hover:scale-105 transition-transform">
                   <MessageSquare className="w-6 h-6" />
                 </div>
                 <span className="text-[11px] font-mono font-semibold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 flex items-center gap-1.5">
@@ -77,7 +77,7 @@ export default function ContactSection() {
                 </span>
               </div>
               <h3 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
-                Direct WhatsApp Chat
+                Direct WhatsApp Contact
               </h3>
               <p className="text-xs text-slate-300 mt-1 mb-3">
                 Click to initiate an immediate WhatsApp chat for rapid recruitment or project consulting.
@@ -89,9 +89,9 @@ export default function ContactSection() {
             </a>
 
             {/* Email Card */}
-            <div className="glass-panel rounded-3xl p-6 border-slate-800 bg-slate-900/80">
+            <div className="glass-panel rounded-3xl p-6 border-slate-800/90 bg-[#070e24]/85">
               <div className="flex items-start justify-between mb-3">
-                <div className="w-11 h-11 rounded-2xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400">
+                <div className="w-11 h-11 rounded-2xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-300">
                   <Mail className="w-5 h-5" />
                 </div>
                 <button
@@ -102,13 +102,13 @@ export default function ContactSection() {
                   <span>{copiedEmail ? "Copied!" : "Copy"}</span>
                 </button>
               </div>
-              <h3 className="text-base font-bold text-white">Email Address</h3>
+              <h3 className="text-base font-bold text-white">Official Email Address</h3>
               <p className="text-xs text-slate-400 mt-0.5 mb-3">
                 For official correspondence, RFP packets, and verified documentation.
               </p>
               <a
                 href={`mailto:${portfolioData.personal.email}`}
-                className="text-xs font-mono font-semibold text-teal-300 hover:text-teal-200 transition-colors break-all"
+                className="text-xs font-mono font-semibold text-blue-300 hover:text-blue-200 transition-colors break-all"
               >
                 {portfolioData.personal.email}
               </a>
@@ -116,18 +116,18 @@ export default function ContactSection() {
 
             {/* Direct Phone & Location Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              <div className="glass-panel rounded-2xl p-4 border-slate-800">
-                <Phone className="w-5 h-5 text-cyan-400 mb-2" />
+              <div className="glass-panel rounded-2xl p-4 border-slate-800/90 bg-[#070e24]/85">
+                <Phone className="w-5 h-5 text-sky-400 mb-2" />
                 <p className="text-[11px] text-slate-400 uppercase font-mono">Mobile Call</p>
                 <a
                   href={`tel:${portfolioData.personal.phone}`}
-                  className="text-xs font-bold text-white hover:text-cyan-300 transition-colors font-mono"
+                  className="text-xs font-bold text-white hover:text-sky-300 transition-colors font-mono"
                 >
                   {portfolioData.personal.phone}
                 </a>
               </div>
 
-              <div className="glass-panel rounded-2xl p-4 border-slate-800">
+              <div className="glass-panel rounded-2xl p-4 border-slate-800/90 bg-[#070e24]/85">
                 <MapPin className="w-5 h-5 text-amber-400 mb-2" />
                 <p className="text-[11px] text-slate-400 uppercase font-mono">Primary Station</p>
                 <p className="text-xs font-bold text-white leading-tight">
@@ -137,9 +137,9 @@ export default function ContactSection() {
             </div>
 
             {/* Social Link */}
-            <div className="glass-panel rounded-2xl p-4 border-slate-800 flex items-center justify-between text-xs">
-              <div className="flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center font-bold">
+            <div className="glass-panel rounded-2xl p-4 border-slate-800/90 bg-[#070e24]/85 flex items-center justify-between text-xs">
+              <div className="flex items-center gap-2.5">
+                <span className="w-8 h-8 rounded-lg bg-blue-600/30 text-blue-300 flex items-center justify-center font-bold">
                   FB
                 </span>
                 <div>
@@ -151,9 +151,9 @@ export default function ContactSection() {
                 href="https://www.facebook.com/share/1HcoNJn52Y/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 rounded-lg bg-blue-600 text-white font-semibold text-xs hover:bg-blue-500 transition-colors flex items-center gap-1"
+                className="px-3.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs transition-colors flex items-center gap-1 shadow-sm"
               >
-                <span>Visit</span>
+                <span>Visit Album</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>
@@ -162,26 +162,26 @@ export default function ContactSection() {
 
           {/* Right Column: Interactive Inquiry Form (Col 7) */}
           <div className="lg:col-span-7">
-            <div className="glass-panel rounded-3xl p-6 sm:p-8 border-slate-800 bg-slate-900/90 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/5 rounded-full blur-3xl pointer-events-none" />
+            <div className="glass-panel rounded-3xl p-6 sm:p-8 border-slate-800/90 bg-[#070e24]/90 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/5 rounded-full blur-3xl pointer-events-none" />
 
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-white mb-1">
-                  Send a Direct Message / Inquire
+                  Official Communication / Inquiry Form
                 </h3>
                 <p className="text-xs text-slate-400">
-                  Fill in your details below and I will get back to you promptly.
+                  Transmit project parameters or appointment requests directly.
                 </p>
               </div>
 
               {formSubmitted ? (
                 <div className="p-8 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-center space-y-4">
-                  <div className="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto">
+                  <div className="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center mx-auto">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h4 className="text-lg font-bold text-white">Inquiry Received Successfully</h4>
+                  <h4 className="text-lg font-bold text-white">Inquiry Transmitted Successfully</h4>
                   <p className="text-xs text-slate-300 max-w-md mx-auto">
-                    Thank you for reaching out. You can also connect immediately on WhatsApp at{" "}
+                    Your correspondence has been received. You may also initiate immediate priority communication via WhatsApp at{" "}
                     <strong className="text-emerald-300">+966 58 082 8612</strong>.
                   </p>
                   <button
@@ -191,7 +191,7 @@ export default function ContactSection() {
                     }}
                     className="px-4 py-2 rounded-xl bg-slate-800 text-xs font-semibold text-slate-200 hover:bg-slate-700 transition-colors cursor-pointer"
                   >
-                    Send Another Message
+                    Transmit Another Message
                   </button>
                 </div>
               ) : (
@@ -207,21 +207,21 @@ export default function ContactSection() {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="e.g. Engr. Ahmad Al-Harbi"
-                        className="w-full px-4 py-3 rounded-xl bg-slate-950/70 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-teal-500 transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030716]/90 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-blue-500 transition-colors"
                       />
                     </div>
 
                     <div>
                       <label className="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1.5">
-                        Your Email *
+                        Your Official Email *
                       </label>
                       <input
                         type="email"
                         required
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="e.g. ahmad@company.com"
-                        className="w-full px-4 py-3 rounded-xl bg-slate-950/70 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-teal-500 transition-colors"
+                        placeholder="e.g. ahmad@organization.com"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030716]/90 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-blue-500 transition-colors"
                       />
                     </div>
                   </div>
@@ -236,46 +236,46 @@ export default function ContactSection() {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="+966 50 123 4567"
-                        className="w-full px-4 py-3 rounded-xl bg-slate-950/70 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-teal-500 transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030716]/90 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-blue-500 transition-colors"
                       />
                     </div>
 
                     <div>
                       <label className="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1.5">
-                        Subject / Project Type
+                        Subject / Engagement Type
                       </label>
                       <input
                         type="text"
                         required
                         value={formData.subject}
                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        placeholder="Job Position / Facility Maintenance / ELV Project"
-                        className="w-full px-4 py-3 rounded-xl bg-slate-950/70 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-teal-500 transition-colors"
+                        placeholder="Supervisory Role / Facility Maintenance / Contract"
+                        className="w-full px-4 py-3 rounded-xl bg-[#030716]/90 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-blue-500 transition-colors"
                       />
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1.5">
-                      Your Message & Scope *
+                      Scope & Details *
                     </label>
                     <textarea
                       required
                       rows={5}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Please describe your requirements, position details, or facility inquiry..."
-                      className="w-full px-4 py-3 rounded-xl bg-slate-950/70 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-teal-500 transition-colors resize-none"
+                      placeholder="Please outline the position requirements, facility specifications, or scope of inquiry..."
+                      className="w-full px-4 py-3 rounded-xl bg-[#030716]/90 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-blue-500 transition-colors resize-none"
                     />
                   </div>
 
                   <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
                     <p className="text-[11px] text-slate-400 text-center sm:text-left">
-                      Strict confidentiality and professional data handling guaranteed.
+                      Strict professional confidentiality observed.
                     </p>
                     <button
                       type="submit"
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-teal-500 text-slate-950 font-bold text-xs sm:text-sm hover:bg-teal-400 transition-all shadow-[0_0_20px_rgba(45,212,191,0.4)] cursor-pointer"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] cursor-pointer"
                     >
                       <Send className="w-4 h-4" />
                       <span>Transmit Message</span>

@@ -40,14 +40,14 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-teal-500/10 text-teal-400 border border-teal-500/30 mb-4">
-            <Wrench className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium bg-blue-950/70 text-blue-300 border border-blue-500/30 mb-4">
+            <Wrench className="w-3.5 h-3.5 text-blue-400" />
             <span>Operational Capabilities & Offerings</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
             Specialized Engineering & Supervisory Services
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
             Proven execution across electronics maintenance, data room structured cabling, fire safety certifications, and 24/7 technical shift leadership.
           </p>
         </div>
@@ -59,14 +59,14 @@ export default function ServicesSection() {
             return (
               <div
                 key={index}
-                className="glass-panel glass-panel-hover rounded-3xl p-6 sm:p-7 border-slate-800 flex flex-col justify-between group relative overflow-hidden"
+                className="glass-panel glass-panel-hover rounded-3xl p-6 sm:p-7 border-slate-800/90 bg-[#070e24]/85 flex flex-col justify-between group relative overflow-hidden"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 group-hover:bg-teal-500 group-hover:text-slate-950 transition-colors mb-5">
+                  <div className="w-12 h-12 rounded-2xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-300 group-hover:bg-blue-600 group-hover:text-white transition-colors mb-5">
                     <Icon className="w-6 h-6" />
                   </div>
 
-                  <h3 className="text-lg font-bold text-white group-hover:text-teal-300 transition-colors mb-2 leading-snug">
+                  <h3 className="text-lg font-bold text-white group-hover:text-blue-300 transition-colors mb-2 leading-snug">
                     {service.title}
                   </h3>
 
@@ -76,21 +76,21 @@ export default function ServicesSection() {
 
                   {/* Key Deliverables */}
                   <div className="space-y-2 mb-6">
-                    <h4 className="text-[11px] font-mono uppercase tracking-wider text-teal-400">
+                    <h4 className="text-[11px] font-mono uppercase tracking-wider text-blue-400">
                       Standard Deliverables:
                     </h4>
                     {service.deliverables.map((item, dIdx) => (
-                      <div key={dIdx} className="flex items-center gap-2 text-xs text-slate-400">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-teal-400 shrink-0" />
+                      <div key={dIdx} className="flex items-center gap-2 text-xs text-slate-300">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                         <span>{item}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-slate-800/80">
+                <div className="pt-4 border-t border-slate-800">
                   <a
-                    href={`https://wa.me/966580828612?text=Hello%20Rana%20Zaheer%20Ahmad,%20I%20am%20interested%20in%20your%20service:%20${encodeURIComponent(service.title)}`}
+                    href={`https://wa.me/966580828612?text=Hello%20Engr.%20Rana%20Zaheer%20Ahmad,%20I%20am%20inquiring%20about%20your%20service:%20${encodeURIComponent(service.title)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"

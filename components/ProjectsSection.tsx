@@ -16,8 +16,6 @@ import {
 import { portfolioData, ProjectItem } from "@/data/portfolioData";
 
 export default function ProjectsSection() {
-  const [filter, setFilter] = useState("all");
-
   const getProjectIcon = (icon: string) => {
     switch (icon) {
       case "palace":
@@ -40,15 +38,15 @@ export default function ProjectsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-teal-500/10 text-teal-400 border border-teal-500/30 mb-4">
-            <Building2 className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium bg-blue-950/70 text-blue-300 border border-blue-500/30 mb-4">
+            <Building2 className="w-3.5 h-3.5 text-blue-400" />
             <span>Landmark Infrastructure Portfolio</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Royal Palaces & Mission-Critical Sites
+            Royal Palaces & Mission-Critical Facilities
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            High-security facilities and royal complexes where downtime is never an option. Overseeing high-density electronics, life safety networks, and communication backbones.
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            High-security state facilities and royal complexes where continuous uptime is paramount. Overseeing low-voltage electronics, life safety networks, and communication backbones.
           </p>
         </div>
 
@@ -59,40 +57,40 @@ export default function ProjectsSection() {
             return (
               <div
                 key={project.id}
-                className="glass-panel glass-panel-hover rounded-3xl p-6 sm:p-7 border-slate-800 flex flex-col justify-between group relative overflow-hidden"
+                className="glass-panel glass-panel-hover rounded-3xl p-6 sm:p-7 border-slate-800/90 bg-[#070e24]/85 flex flex-col justify-between group relative overflow-hidden"
               >
-                <div className="absolute top-0 right-0 w-28 h-28 bg-teal-500/5 rounded-full blur-2xl group-hover:bg-teal-500/10 transition-colors pointer-events-none" />
+                <div className="absolute top-0 right-0 w-28 h-28 bg-blue-600/5 rounded-full blur-2xl group-hover:bg-blue-600/10 transition-colors pointer-events-none" />
 
                 <div>
                   {/* Category & Icon */}
                   <div className="flex items-center justify-between gap-2 mb-4">
-                    <div className="w-12 h-12 rounded-2xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 group-hover:bg-teal-500 group-hover:text-slate-950 transition-colors">
+                    <div className="w-12 h-12 rounded-2xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-300 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60">
+                    <span className="text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-lg bg-[#09122c] text-blue-200 border border-blue-800/50">
                       {project.category}
                     </span>
                   </div>
 
                   {/* Title & Subtitle */}
-                  <h3 className="text-lg font-bold text-white group-hover:text-teal-300 transition-colors mb-1.5 leading-snug">
+                  <h3 className="text-lg font-bold text-white group-hover:text-blue-300 transition-colors mb-1.5 leading-snug">
                     {project.title}
                   </h3>
-                  <p className="text-xs font-medium text-cyan-400 mb-3">
+                  <p className="text-xs font-medium text-sky-300 mb-3">
                     {project.subtitle}
                   </p>
 
                   {/* Scope badge */}
-                  <div className="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80 text-xs text-slate-300 mb-4">
-                    <span className="text-[10px] font-mono text-teal-400 block uppercase">Project Scope:</span>
+                  <div className="p-2.5 rounded-xl bg-[#030716]/90 border border-slate-800 text-xs text-slate-300 mb-4">
+                    <span className="text-[10px] font-mono text-blue-400 block uppercase">Project Scope:</span>
                     <span className="font-medium">{project.scope}</span>
                   </div>
 
                   {/* Highlights */}
                   <div className="space-y-2 mb-6">
                     {project.highlights.map((item, hIdx) => (
-                      <div key={hIdx} className="flex items-start gap-2 text-xs text-slate-400">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5" />
+                      <div key={hIdx} className="flex items-start gap-2 text-xs text-slate-300">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
                         <span className="leading-relaxed">{item}</span>
                       </div>
                     ))}
@@ -100,9 +98,9 @@ export default function ProjectsSection() {
                 </div>
 
                 {/* Key Metric footer */}
-                <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                  <div className="flex items-center gap-1.5 text-emerald-400 font-semibold">
-                    <Zap className="w-3.5 h-3.5" />
+                <div className="pt-4 border-t border-slate-800 flex items-center justify-between text-xs">
+                  <div className="flex items-center gap-1.5 text-amber-300 font-semibold">
+                    <Zap className="w-3.5 h-3.5 text-amber-400" />
                     <span>{project.metrics}</span>
                   </div>
                 </div>
